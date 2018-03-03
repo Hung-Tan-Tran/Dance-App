@@ -14,7 +14,7 @@ public class SplashActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         //switch from splash activity to main activity
-        Intent intent = new Intent(this, MainActivity.class);
+        Intent intent = new Intent(this, Explore.class);
         startActivity(intent);
         finish();
     }

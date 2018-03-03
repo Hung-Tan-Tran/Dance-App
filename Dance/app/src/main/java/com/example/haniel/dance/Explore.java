@@ -5,8 +5,12 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.*;
 
-public class MainActivity extends AppCompatActivity {
+import java.util.ArrayList;
+
+
+public class Explore extends AppCompatActivity {
     TextView Mylabel;
+    ArrayList<Link> test;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -15,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void clickMe(View view){
-        Mylabel.setText("Why did you click me!");
+        Mylabel.setText(test.toString());
+
     }
 }

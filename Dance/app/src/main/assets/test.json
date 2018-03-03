@@ -1,0 +1,38 @@
+{
+  "Links": [
+    {
+      "Name": "",
+      "imgURL": "",
+      "videoURL": "",
+      "description": ""
+    },
+    {
+      "Name": "",
+      "imgURL": "",
+      "videoURL": "",
+      "description": ""
+    }
+  ],
+  "Tutorials": [
+    {
+      "Name": "",
+      "imgURL": "",
+      "videoURL": "",
+      "description": "",
+      "textBoxes": [
+        "",
+        ""
+      ]
+    },
+    {
+      "Name": "",
+      "imgURL": "",
+      "videoURL": "",
+      "description": "",
+      "textBoxes": [
+        "",
+        ""
+      ]
+    }
+  ]
+}
