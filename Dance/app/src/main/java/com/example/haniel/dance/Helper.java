@@ -72,26 +72,35 @@ public class Helper {
         return null;
     }
 
-    static protected ArrayList<Tutorials> getTutorialsArray(String type, JSONObject reader) {
+    static protected ArrayList<Tutorials> getTutorialsArray( JSONObject reader) {
         ArrayList<Tutorials> data = new ArrayList<Tutorials>();
-        JSONArray jsonArray;
+        JSONArray jsonArray, img, text;
         JSONObject jsonObject;
-        Object test;
-        String Name, imgURL,videoURL, description;
-        String[] textBoxes;
+        String type = "Tutorials";
+        String Name, videoURL, description;
+        String[] textBoxes, imgURL;
         try {
             jsonArray = reader.getJSONArray(type);
 
             for(int i = 0; i < jsonArray.length();i++){
                 jsonObject = jsonArray.getJSONObject(i);
                 Name = jsonObject.getString("Name");
-                imgURL = jsonObject.getString("imgURL");
+
+                img = jsonObject.getJSONArray("imgURL");
+                imgURL = new String[img.length()];
+                for (int j=0; i < img.length(); i++) {
+                    imgURL[j] = img.getString(j);
+                }
+
                 videoURL = jsonObject.getString("videoURL");
                 description = jsonObject.getString("description");
-                textBoxes = new String[jsonArray.length()];
-                for (int j=0; i<jsonArray.length(); i++) {
-                    textBoxes[j] = jsonArray.getString(j);
+
+                text = jsonObject.getJSONArray("textBoxes");
+                textBoxes = new String[text.length()];
+                for (int j=0; i < text.length(); i++) {
+                    textBoxes[j] = text.getString(j);
                 }
+
                 data.add(new Tutorials(Name,imgURL,videoURL,description, textBoxes));
             }
 

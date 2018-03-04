@@ -17,23 +17,27 @@
   ],
   "Tutorials": [
     {
-      "Name": "",
-      "imgURL": "",
-      "videoURL": "",
-      "description": "",
+      "Name": "Robot",
+      "imgURL": [
+        "logo"
+      ],
+      "videoURL": "https://www.youtube.com/watch?v=8E2_0MZjckM",
+      "description": "Many dance moves",
       "textBoxes": [
-        "",
-        ""
+        "This is one text box",
+        "This is another text box"
       ]
     },
     {
-      "Name": "",
-      "imgURL": "",
-      "videoURL": "",
-      "description": "",
+      "Name": "Scooby-Do",
+      "imgURL": [
+        "logo"
+      ],
+      "videoURL": "Latin",
+      "description": "https://www.youtube.com/watch?v=mH12IOu_WD0",
       "textBoxes": [
-        "",
-        ""
+        "dis is one text boxy doxy",
+        "dis is another text box doxy"
       ]
     }
   ]
