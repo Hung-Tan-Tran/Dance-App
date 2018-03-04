@@ -59,8 +59,8 @@ public class Helper {
                 videoURL = jsonObject.getString("videoURL");
                 description = jsonObject.getString("description");
                 Category = jsonObject.getString("category");
-                int id = temp.getResources().getIdentifier(Img, "drawable", temp.getPackageName());
-                data.add(new Video(Title, Category, description, videoURL, id));
+                //int id = temp.getResources().getIdentifier(Img, "drawable", temp.getPackageName());
+                data.add(new Video(Title, Category, description, videoURL, Img));
             }
 
             return data;

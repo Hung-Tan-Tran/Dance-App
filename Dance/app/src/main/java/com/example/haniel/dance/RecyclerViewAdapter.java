@@ -11,6 +11,8 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.squareup.picasso.Picasso;
+
 import java.util.List;
 
 /**
@@ -41,7 +43,8 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     public void onBindViewHolder(MyViewHolder holder, final int position) {
 
         holder.tv_video_title.setText(myData.get(position).getTitle());
-        holder.img_video_thumbnail.setImageResource(myData.get(position).getThumbnail());
+        //holder.img_video_thumbnail.setImageResource(Picasso.with(myContext).load(myData.get(position).getThumbnail()));
+        Picasso.with(myContext).load(myData.get(position).getThumbnail()).into(holder.img_video_thumbnail);
         holder.cardView.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){

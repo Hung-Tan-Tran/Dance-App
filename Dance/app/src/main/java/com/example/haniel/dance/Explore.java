@@ -24,7 +24,7 @@ public class Explore extends AppCompatActivity {
 
         RecyclerView myRecycler = (RecyclerView) findViewById(R.id.recyclerview_id);
         RecyclerViewAdapter myadapter = new RecyclerViewAdapter(this, lVideo);
-        myRecycler.setLayoutManager(new GridLayoutManager(this, 3));
+        myRecycler.setLayoutManager(new GridLayoutManager(this, 2));
         myRecycler.setAdapter(myadapter);
     }
 }

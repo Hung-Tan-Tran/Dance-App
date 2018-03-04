@@ -9,14 +9,14 @@ public class Video {
     private String Title;
     private String Category;
     private String Description;
-    private int Thumbnail;
+    private String Thumbnail;
     private String VideoURL;
 
     public Video(){
 
     }
 
-    public Video(String title, String category, String description, String videoURL, int thumbnail) {
+    public Video(String title, String category, String description, String videoURL, String thumbnail) {
         Title = title;
         Category = category;
         Description = description;
@@ -48,11 +48,11 @@ public class Video {
         Description = description;
     }
 
-    public int getThumbnail() {
+    public String getThumbnail() {
         return Thumbnail;
     }
 
-    public void setThumbnail(int thumbnail) {
+    public void setThumbnail(String thumbnail) {
         Thumbnail = thumbnail;
     }
 

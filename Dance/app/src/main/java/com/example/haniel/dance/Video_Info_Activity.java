@@ -31,12 +31,12 @@ public class Video_Info_Activity extends  YouTubeBaseActivity {
         final String VideoURL = intent.getExtras().getString("VideoURL");
 
         ytPlayerView = (YouTubePlayerView) findViewById(R.id.video_view);
-        label.setText("Description: "+Description);
+        label.setText("Description: "+Description+"  "+VideoURL);
 
         myInitializer = new YouTubePlayer.OnInitializedListener() {
             @Override
             public void onInitializationSuccess(YouTubePlayer.Provider provider, YouTubePlayer youTubePlayer, boolean b) {
-                youTubePlayer.loadVideo("VideURL");
+                youTubePlayer.loadVideo(VideoURL);
             }
 
             @Override
