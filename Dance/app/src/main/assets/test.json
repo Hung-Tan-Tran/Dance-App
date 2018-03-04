@@ -13,7 +13,57 @@
       "category":"Hip Hop",
       "videoURL": "8E2_0MZjckM",
       "description": "Many dance moves"
+    },
+    {
+      "Name": "Running Man",
+      "imgURL": "logo",
+      "category":"Hip Hop",
+      "videoURL": "hhttps://www.youtube.com/watch?v=lYpRasK4c9k",
+      "description": "An old time classic dance move. Bust this out and you'll be the life of the party."
+    },
+    {
+      "Name": "Nae Nae",
+      "imgURL": "logo",
+      "category":"Hip Hop",
+      "videoURL": "https://www.youtube.com/watch?v=aQ6kP9mt52w",
+      "description": "Turn up in any crowd, the nae nae is a versatile dance move that fits to most songs."
+    },
+    {
+      "Name": "TT ",
+      "imgURL": "logo",
+      "category":"K-pop",
+      "videoURL": "https://www.youtube.com/watch?v=Cklbe1i-NC8",
+      "description": "Many dance moves."
+    },
+    {
+      "Name": "Signal",
+      "imgURL": "logo",
+      "category":"K-pop",
+      "videoURL": "https://www.youtube.com/watch?v=aQ6kP9mt52w",
+      "description": "Many dance moves."
+    },
+    {
+      "Name": "Superman",
+      "imgURL": "logo",
+      "category":"Hip Hop",
+      "videoURL": "hhttps://www.youtube.com/watch?v=l9vLYEkMTc4",
+      "description": "Many dance moves."
+    },
+    {
+      "Name": "Dougie",
+      "imgURL": "logo",
+      "category":"Hip Hop",
+      "videoURL": "https://www.youtube.com/watch?v=MrH6EbHhdvE",
+      "description": "Many dance moves"
+    },
+    {
+      "Name": "Jerk",
+      "imgURL": "logo",
+      "category":"Hip Hop",
+      "videoURL": "https://www.youtube.com/watch?v=fyepJRVfJEc",
+      "description": "Many dance moves"
     }
+
   ],
   "Tutorials": [
     {
