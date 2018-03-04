@@ -4,14 +4,14 @@
       "Name": "Scooby-Do",
       "imgURL": "logo",
       "category": "Latin",
-      "videoURL": "https://www.youtube.com/watch?v=mH12IOu_WD0",
+      "videoURL": "mH12IOu_WD0",
       "description": "Dance moves "
     },
     {
       "Name": "Robot",
       "imgURL": "logo",
       "category":"Hip Hop",
-      "videoURL": "https://www.youtube.com/watch?v=8E2_0MZjckM",
+      "videoURL": "8E2_0MZjckM",
       "description": "Many dance moves"
     }
   ],

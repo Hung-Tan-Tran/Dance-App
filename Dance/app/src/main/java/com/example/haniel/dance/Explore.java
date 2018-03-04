@@ -22,18 +22,9 @@ public class Explore extends AppCompatActivity {
 
         lVideo = Helper.getLinkArray(Helper.parseJson("test.json",this));
 
-        /*lVideo.add(new Video("The Scooby-Doo", "Categorie", "Something descriptive", R.drawable.logo));
-        lVideo.add(new Video("Dabing", "Urban", "Something descriptive", R.drawable.logo));
-        lVideo.add(new Video("Tango", "Latin", "Something descriptive", R.drawable.logo));
-        lVideo.add(new Video("Robocop", "Hip-hop", "Something descriptive", R.drawable.logo));*/
-
         RecyclerView myRecycler = (RecyclerView) findViewById(R.id.recyclerview_id);
         RecyclerViewAdapter myadapter = new RecyclerViewAdapter(this, lVideo);
         myRecycler.setLayoutManager(new GridLayoutManager(this, 3));
         myRecycler.setAdapter(myadapter);
-    }
-
-    public void clickMe(View view){
-
     }
 }
