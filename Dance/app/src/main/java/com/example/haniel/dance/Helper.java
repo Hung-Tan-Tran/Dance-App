@@ -15,8 +15,10 @@ import android.content.Context;
  */
 
 public class Helper {
+   static Context temp;
 
     static protected JSONObject parseJson(String filename, Context context){
+        temp = context;
         String json;
         try {
             InputStream in = context.getAssets().open(filename);
@@ -40,22 +42,25 @@ public class Helper {
         return null;
     }
 
-    static protected ArrayList<Link> getLinkArray(String type, JSONObject reader) {
-        ArrayList<Link> data = new ArrayList<Link>();
+    static protected ArrayList<Video> getLinkArray( JSONObject reader) {
+        ArrayList<Video> data;
         JSONArray jsonArray;
         JSONObject jsonObject;
-        Object test;
-        String Name, imgURL,videoURL, description;
+        String type = "Links";
+        String Title, Category,  Img ,videoURL, description;
         try {
+            data = new ArrayList<>();
             jsonArray = reader.getJSONArray(type);
 
             for(int i = 0; i < jsonArray.length();i++){
                 jsonObject = jsonArray.getJSONObject(i);
-                Name = jsonObject.getString("Name");
-                imgURL = jsonObject.getString("imgURL");
+                Title = jsonObject.getString("Name");
+                Img = jsonObject.getString("imgURL");
                 videoURL = jsonObject.getString("videoURL");
                 description = jsonObject.getString("description");
-                data.add(new Link(Name,imgURL,videoURL,description));
+                Category = jsonObject.getString("category");
+                int id = temp.getResources().getIdentifier(Img, "drawable", temp.getPackageName());
+                data.add(new Video(Title, Category, description, videoURL, id));
             }
 
             return data;
